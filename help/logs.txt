@@ -1,0 +1,210 @@
+PowerShell 7.3.3
+PS C:\Windows\System32>
+PS C:\Windows\System32> cd C:\Users\root\devs\github\django\
+PS C:\Users\root\devs\github\django>
+PS C:\Users\root\devs\github\django> ls
+
+    Directory: C:\Users\root\devs\github\django
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----       26/02/2023 04:11 p. m.                01-django-at-a-glance
+
+PS C:\Users\root\devs\github\django>
+PS C:\Users\root\devs\github\django> mkdir 02-django-mysite-polls
+
+    Directory: C:\Users\root\devs\github\django
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----       27/02/2023 09:44 p. m.                02-django-mysite-polls
+
+PS C:\Users\root\devs\github\django>
+PS C:\Users\root\devs\github\django> cd .\02-django-mysite-polls\
+PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+PS C:\Users\root\devs\github\django\02-django-mysite-polls> ls
+PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+PS C:\Users\root\devs\github\django\02-django-mysite-polls> python --version
+Python 3.11.1
+PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+PS C:\Users\root\devs\github\django\02-django-mysite-polls> pip --version
+pip 23.0.1 from C:\Users\root\AppData\Roaming\Python\Python311\site-packages\pip (python 3.11)
+PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+PS C:\Users\root\devs\github\django\02-django-mysite-polls> pip list
+Package      Version
+------------ -------
+distlib      0.3.6
+filelock     3.8.2
+pip          23.0.1
+platformdirs 2.6.0
+setuptools   65.5.0
+virtualenv   20.17.1
+PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+PS C:\Users\root\devs\github\django\02-django-mysite-polls> python -m virtualenv venv
+created virtual environment CPython3.11.1.final.0-64 in 6374ms
+  creator CPython3Windows(dest=C:\Users\root\devs\github\django\02-django-mysite-polls\venv, clear=False, no_vcs_ignore=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=C:\Users\root\AppData\Local\pypa\virtualenv)
+    added seed packages: pip==22.3.1, setuptools==67.0.0, wheel==0.38.4
+  activators BashActivator,BatchActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+PS C:\Users\root\devs\github\django\02-django-mysite-polls> .\venv\Scripts\activate
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls> python --version
+Python 3.11.1
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls> pip list
+Package    Version
+---------- -------
+pip        22.3.1
+setuptools 67.0.0
+wheel      0.38.4
+
+[notice] A new release of pip available: 22.3.1 -> 23.0.1
+[notice] To update, run: python.exe -m pip install --upgrade pip
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls> python -m pip install --upgrade pip
+Requirement already satisfied: pip in c:\users\root\devs\github\django\02-django-mysite-polls\venv\lib\site-packages (22.3.1)
+Collecting pip
+  Using cached pip-23.0.1-py3-none-any.whl (2.1 MB)
+Installing collected packages: pip
+  Attempting uninstall: pip
+    Found existing installation: pip 22.3.1
+    Uninstalling pip-22.3.1:
+      Successfully uninstalled pip-22.3.1
+Successfully installed pip-23.0.1
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls> pip list
+Package    Version
+---------- -------
+pip        23.0.1
+setuptools 67.0.0
+wheel      0.38.4
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls> pip install django
+Collecting django
+  Using cached Django-4.1.7-py3-none-any.whl (8.1 MB)
+Collecting asgiref<4,>=3.5.2
+  Using cached asgiref-3.6.0-py3-none-any.whl (23 kB)
+Collecting sqlparse>=0.2.2
+  Using cached sqlparse-0.4.3-py3-none-any.whl (42 kB)
+Collecting tzdata
+  Using cached tzdata-2022.7-py2.py3-none-any.whl (340 kB)
+Installing collected packages: tzdata, sqlparse, asgiref, django
+Successfully installed asgiref-3.6.0 django-4.1.7 sqlparse-0.4.3 tzdata-2022.7
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls> pip list
+Package    Version
+---------- -------
+asgiref    3.6.0
+Django     4.1.7
+pip        23.0.1
+setuptools 67.0.0
+sqlparse   0.4.3
+tzdata     2022.7
+wheel      0.38.4
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls> django-admin startproject mysite_polls .
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls> python .\manage.py startapp polls
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls> ls
+
+    Directory: C:\Users\root\devs\github\django\02-django-mysite-polls
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----       27/02/2023 09:50 p. m.                mysite_polls
+d----       27/02/2023 09:50 p. m.                polls
+d----       27/02/2023 09:45 p. m.                venv
+-a---       27/02/2023 09:49 p. m.            690 manage.py
+
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls> mkdir help
+
+    Directory: C:\Users\root\devs\github\django\02-django-mysite-polls
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----       27/02/2023 09:51 p. m.                help
+
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
