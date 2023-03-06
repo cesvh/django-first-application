@@ -261,3 +261,43 @@ ALTER TABLE `polls_choice` ADD CONSTRAINT `polls_choice_question_id_c5b4b260_fk_
 (venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
 (venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
 (venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls> python .\manage.py makemigrations
+Migrations for 'polls':
+  polls\migrations\0002_alter_question_pub_date.py
+    - Alter field pub_date on question
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls> python .\manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, polls, sessions
+Running migrations:
+  Applying polls.0001_initial... OK
+  Applying polls.0002_alter_question_pub_date... OK
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls> python .\manage.py sqlmigrate polls 0002
+--
+-- Alter field pub_date on question
+--
+-- (no-op)
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
