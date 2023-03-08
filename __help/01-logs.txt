@@ -301,3 +301,127 @@ Running migrations:
 (venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
 (venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
 (venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls> python .\manage.py shell
+Python 3.11.1 (tags/v3.11.1:a7a450f, Dec  6 2022, 19:58:39) [MSC v.1934 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>>
+>>>
+>>> from polls.models import Question, Choice
+>>>
+>>>
+>>> Question.objects.all()
+<QuerySet []>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>> from django.utils import timezone
+>>>
+>>> timezone.now()
+datetime.datetime(2023, 3, 8, 5, 4, 57, 756666, tzinfo=datetime.timezone.utc)
+>>>
+>>>
+>>> q1 = Question(question_text="What's new?", pub_date=timezone.now())
+>>>
+>>> q1
+<Question: Question object (None)>
+>>>
+>>>
+>>> q1.save()
+>>>
+>>> q.id
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'q' is not defined
+>>>
+>>> q1.id
+1
+>>>
+>>>
+>>> q1.question_text
+"What's new?"
+>>>
+>>>
+>>>
+>>> q1.pub_date
+datetime.datetime(2023, 3, 8, 5, 6, 9, 79486, tzinfo=datetime.timezone.utc)
+>>>
+>>>
+>>>
+>>>
+>>> q1.question_text("What's up?")
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+TypeError: 'str' object is not callable
+>>>
+>>> q1.question_text="What's up?"
+>>>
+>>>
+>>> q1.question_text
+"What's up?"
+>>>
+>>>
+>>>
+>>> q1.save()
+>>>
+>>> Question.objects.all()
+<QuerySet [<Question: Question object (1)>]>
+>>>
+>>>
+>>>
+>>> Question.objects.all()
+<QuerySet [<Question: Question object (1)>]>
+>>>
+>>>
+>>>
+>>> exit()
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls> python .\manage.py makemigrations
+No changes detected
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls> python .\manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, polls, sessions
+Running migrations:
+  No migrations to apply.
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls> python .\manage.py shell
+Python 3.11.1 (tags/v3.11.1:a7a450f, Dec  6 2022, 19:58:39) [MSC v.1934 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>>
+>>>
+>>>
+>>>
+>>> from polls.models import Question, Choice
+>>>
+>>> Question.Objects.all()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: type object 'Question' has no attribute 'Objects'
+>>>
+>>> Question.objects.all()
+<QuerySet [<Question: What's up?>]>
+>>>
+>>>
+>>>
+>>> exit()
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
+(venv) PS C:\Users\root\devs\github\django\02-django-mysite-polls>
